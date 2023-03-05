@@ -8,6 +8,5 @@
 ## Шаги запуска:
 
  - Склонировать репозиторий git clone
- - Установить docker и docker-compose если не установлен
  - Находясь в корне проекта выполнить команду npm run build:dev и следом npm run start
  - ввести в браузере адресс который будет находится в консоле при выполнение команды npm run start (On Your Network (IPv4): 'adress' или Loopback: 'adress')
