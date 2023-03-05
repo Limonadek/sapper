@@ -55,7 +55,7 @@ function startGame(width, height, bombsCount) {
     let j = 0;
     let x = 0;
 
-    const nums = {
+    const timers = {
         0: 'timer0',
         1: 'timer1',
         2: 'timer2',
@@ -70,22 +70,22 @@ function startGame(width, height, bombsCount) {
     }
 
     function updateNum() {
-        time1.classList.replace(nums[i % 10], nums[(i % 10) + 1]);
+        time1.classList.replace(timers[i % 10], timers[(i % 10) + 1]);
         i++;
 
         if (i % 10 === 0) {
-            time2.classList.replace(nums[j % 10], nums[(j % 10) + 1]);
+            time2.classList.replace(timers[j % 10], timers[(j % 10) + 1]);
             j++;
         }
 
         if (i % 100 === 0) {
-            time3.classList.replace(nums[x % 10], nums[(x % 10) + 1]);
+            time3.classList.replace(timers[x % 10], timers[(x % 10) + 1]);
             x++;
         }
 
-        time3.classList.replace(nums[10], nums[(x % 10)]);
-        time2.classList.replace(nums[10], nums[(j % 10)]);
-        time1.classList.replace(nums[10], nums[(i % 10)]);
+        time3.classList.replace(timers[10], timers[(x % 10)]);
+        time2.classList.replace(timers[10], timers[(j % 10)]);
+        time1.classList.replace(timers[10], timers[(i % 10)]);
 
         if(i === 999) {
             clearInterval(timerId);
