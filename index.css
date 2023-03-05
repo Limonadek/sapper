@@ -1,0 +1,336 @@
+.body {
+    width: 100%;
+    background-color: #edeef0;
+}
+
+.main {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 6px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #747474;
+    border-right: 2px solid #747474;
+    display: flex;
+    width: 275px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bcbcbc;
+}
+
+.header {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-top: 2px solid #747474;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid #747474;
+    width: 236px;
+    height: 30px;
+    margin: 6px;
+    background-color: #bfbfbf;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 42px;
+    height: 23px;
+    background-color: #000000;
+}
+
+.smile {
+    width: 26px;
+    height: 27px;
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: 0px -24px;
+}
+
+.smile-win {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -81px -24px;
+}
+
+.smile-death {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -108px -24px;
+}
+
+.scared {
+    background: url(./image/minesweeper-sprites.png) -54px -24px no-repeat;
+}
+
+.smile:active {
+    background-position: -28px -24px;
+} 
+
+.timer {
+    display: flex;
+    width: 42px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 23px;
+    background-color: #000000;
+}
+
+.timer0 {
+    background: url(./image/minesweeper-sprites.png) -125px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer1 {
+    background: url(./image/minesweeper-sprites.png) 1px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer2 {
+    background: url(./image/minesweeper-sprites.png) -13px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer3 {
+    background: url(./image/minesweeper-sprites.png) -28px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer4 {
+    background: url(./image/minesweeper-sprites.png) -41px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer5 {
+    background: url(./image/minesweeper-sprites.png) -55px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer6 {
+    background: url(./image/minesweeper-sprites.png) -69px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer7 {
+    background: url(./image/minesweeper-sprites.png) -83px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer8 {
+    background: url(./image/minesweeper-sprites.png) -97px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.timer9 {
+    background: url(./image/minesweeper-sprites.png) -111px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.field {
+    display: grid;
+    width: 256px;
+    grid-template-columns: repeat(16, 16px);
+    border-top: 2px solid #747474;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid #747474;   
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: 1px -51px;
+}
+
+.button:active {
+    background-position: -17px -50px;
+}
+
+.button:disabled {
+    background-position: -17px -51px;
+}
+
+.over-game {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: 1px -51px;
+}
+
+.bomb {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -84px -50px;
+    width: 100%;
+    height: 100%;
+}
+
+.flag-in-bomb {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -118px -50px;
+    width: 100%;
+    height: 100%;
+}
+
+.active-bomb {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -101px -50px;
+    width: 100%;
+    height: 100%;
+}
+
+.flag {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -33px -50px;
+    width: 100%;
+    height: 100%;
+}
+
+.question {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -50px -50px;
+    width: 100%;
+    height: 100%;
+}
+
+.num1 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: 1px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num2 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -16px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num3 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -33px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num4 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -50px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num5 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -67px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num6 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -84px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num7 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -101px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.num8 {
+    background-image: url(./image/minesweeper-sprites.png);
+    background-position: -118px -67px;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item0 {
+    background: url(./image/minesweeper-sprites.png) -125px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item1 {
+    background: url(./image/minesweeper-sprites.png) 1px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item2 {
+    background: url(./image/minesweeper-sprites.png) -13px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item3 {
+    background: url(./image/minesweeper-sprites.png) -28px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item4 {
+    background: url(./image/minesweeper-sprites.png) -41px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item5 {
+    background: url(./image/minesweeper-sprites.png) -55px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item6 {
+    background: url(./image/minesweeper-sprites.png) -69px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item7 {
+    background: url(./image/minesweeper-sprites.png) -83px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item8 {
+    background: url(./image/minesweeper-sprites.png) -97px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.counter__item9 {
+    background: url(./image/minesweeper-sprites.png) -111px 0 no-repeat;
+    width: 100%;
+    height: 100%;
+}

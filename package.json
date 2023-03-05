@@ -1,0 +1,33 @@
+{
+  "name": "sapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Limonadek/sapper.git"
+  },
+  "author": "Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Limonadek/sapper/issues"
+  },
+  "homepage": "https://github.com/Limonadek/sapper#readme",
+  "dependencies": {
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "html-loader": "^4.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
